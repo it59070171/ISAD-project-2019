@@ -15,9 +15,7 @@
                     }
                     $p_id = $_POST['p_id'];
                     $conn = conn();
-                    $sql = "SELECT * FROM product p
-                    LEFT JOIN [transaction] t
-                    ON p.p_id = t.p_id
+                    $sql = "SELECT * FROM product
                     WHERE p_id = $p_id";
                     $result = $conn->query($sql);
                     $row = $result->fetch_assoc();

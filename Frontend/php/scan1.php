@@ -15,7 +15,7 @@
           </div>
 
           <center>
-            <button type="button" class="btn btn-dark">Submit</button>
+            <input type="submit" name="submit" value="submit">
           </center>
         </form> 
       </div>

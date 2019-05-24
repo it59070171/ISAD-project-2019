@@ -19,26 +19,19 @@
               WHERE p_code = $p_code";
               $result = $conn->query($sql);
               $row = $result->fetch_assoc();
-              if($_POST["send"]=="sell"){
-                $income = $row["p_price"] * $_POST["quantity"];
-                $sql = "INSERT INTO finance (
-                      income,
-                      circulation)
-                VALUES ( '$income',  
-                  $_POST["quantity"])";
-
-              }
+              
         ?>
         <p>ชื่อสินค้า: <?=$row["p_name"]?></p>
         <p>ราคาต่อหน่วย: <?=$row["p_price"]?></p>
-        <form method="POST">
+        <form method="POST" action="scan3.php">
           <div class="form-group">
             จำนวนที่ขาย<br>
             <input class="form-control" type="integrity" name="quantity">
           </div>
           <center>
+            <input type="hidden" name="p_price" value="<?=$row['p_price']?>"> 
             <button type="send" value="sell" class="btn btn-dark">Sell</button>
-            <button type="button" class="btn btn-light">Back</button>
+            <button type="button" class="btn btn-light" onclick="window.location.href='scan1.php';">Back</button>
           </center>
         </form>
       </div>
