@@ -27,7 +27,7 @@
 
               Zone: <?=$row['l_id']?><br>
 
-              Expiry Date:<br>
+              Expiry Date: <?=$row['expired_date']?><br>
 
               Quantity: <?=$row['p_quantity']?><br>
 
