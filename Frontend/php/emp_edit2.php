@@ -8,12 +8,22 @@
         <div class="card" style="width: 70%;">
           <div class="card-body">
               <center><h2><span class="badge badge-secondary">แก้ไขข้อมูลพนักงาน</span></h2></center>
-              <form method="POST" action="e_1.php">
+              <form method="POST" action="e_2.php">
                 <div class="form-group">
-                    Employee ID<br>
-                    <input class="form-control" type="text" name="emp_id">
+                    Employee Name<br>
+                    <input class="form-control" type="text" name="emp_name">
                 </div>
 
+                <div class="form-group">
+                    Employee Position<br>
+                    <input class="form-control" type="text" name="role">
+                </div>
+
+
+                <div class="form-group">
+                    Employee Phone<br>
+                    <input class="form-control" type="text" name="phone">
+                </div>
                 <center>
                     <button type="button" class="btn btn-dark">Submit</button>
                     <button type="button" class="btn btn-light">Back</button>
