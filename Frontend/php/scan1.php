@@ -8,10 +8,10 @@
     <div class="card" style="width: 50%;">
       <div class="card-body">
         <center><h2><span class="badge badge-secondary">โปรดสแกนบาร์โค้ดสินค้า</span></h2></center>
-        <form method="POST" action="scac2.php">
+        <form method="POST" action="scan2.php">
           <div class="form-group">
-            Product ID<br>
-            <input class="form-control" type="text" name="p_id">
+            Product Code<br>
+            <input class="form-control" type="text" name="p_code">
           </div>
 
           <center>
