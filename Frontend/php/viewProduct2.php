@@ -10,9 +10,9 @@
               <center><h2><span class="badge badge-secondary">ดูข้อมูลสินค้า</span></h2></center>
               <?php 
                     function conn(){
-                      $conn = new mysqli("localhost", "root","", "stockingver999");
-                      return $conn;
-                    }
+    $conn = new mysqli("localhost", "root","", "stock");
+    return $conn;
+  }
                     $p_id = $_POST['p_id'];
                     $conn = conn();
                     $sql = "SELECT * FROM product

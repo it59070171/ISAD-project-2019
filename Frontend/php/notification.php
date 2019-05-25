@@ -20,11 +20,11 @@
                         <h3><img src="https://i.imgur.com/lWAY0Os.png" alt="danger">&nbsp;การแจ้งเตือนสินค้าเหลือน้อย</h3>
                         <?php 
                             function conn(){
-                            $conn = new mysqli("localhost", "root","", "stockingver999");
-                              return $conn;
-                            }
-                            $conn = conn();
-                            $sql = "SELECT p_name,p_quantity FROM product";
+                            $conn = new mysqli("localhost", "root","", "stock");
+                             return $conn;
+                                 }                            
+                                 $conn = conn();
+                                 $sql = "SELECT p_name,p_quantity FROM product";
 
                             $result = $conn->query($sql);
                             while($row = $result->fetch_assoc()) {

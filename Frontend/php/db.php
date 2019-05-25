@@ -5,7 +5,7 @@
   $sum_circulation = 0;
   ///
 function conn(){
-    $conn = new mysqli("localhost", "root","", "stockingver999");
+    $conn = new mysqli("localhost", "root","", "stock");
     return $conn;
   }
   $month = $_POST["month"];

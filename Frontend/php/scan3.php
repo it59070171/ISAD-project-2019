@@ -1,8 +1,8 @@
 <?php 
  function conn(){
-                $conn = new mysqli("localhost", "root","", "stockingver999");
-                return $conn;
-               }
+    $conn = new mysqli("localhost", "root","", "stock");
+    return $conn;
+  }
        $income = $_POST['p_price'] * $_POST["quantity"];
        $quantity = $_POST['quantity'];
        $year = date("Y");

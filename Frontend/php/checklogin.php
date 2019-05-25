@@ -1,8 +1,8 @@
     	<?php
 			function conn(){
-				$conn = new mysqli("localhost", "root","", "stockingver999");
-				return $conn;
-			}
+		$conn = new mysqli("localhost", "root","", "stock");
+		return $conn;
+	}
 					    $user_id = $_POST['username'];
 						$user_pass = $_POST['password'];
 						$conn = conn();

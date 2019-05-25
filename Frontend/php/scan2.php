@@ -10,9 +10,9 @@
         <center><h2><span class="badge badge-secondary">ระบุจำนวนสินค้าที่ขาย</span></h2></center>
         <?php
               function conn(){
-                $conn = new mysqli("localhost", "root","", "stockingver999");
-                return $conn;
-               }
+    $conn = new mysqli("localhost", "root","", "stock");
+    return $conn;
+  }
               $p_code = $_POST['p_code'];
               $conn = conn();
               $sql = "SELECT * FROM product
