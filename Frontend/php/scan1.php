@@ -11,7 +11,7 @@
         <form method="POST" action="scan2.php">
           <div class="form-group">
             Product Code<br>
-            <input class="form-control" type="text" name="p_code">
+            <input class="form-control" type="text" name="p_code" required>
           </div>
 
           <center>
