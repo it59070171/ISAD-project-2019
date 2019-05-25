@@ -22,7 +22,7 @@ exit();
 	<meta charset="UTF-8">
 	<title>Backend Page</title>
 </head>
-<body>
+<body style="background-color:#292F33;">
 	<br><br><br><br>
 	<center><h2><span class="badge badge-secondary">หน้าหลักพนักงานหลังร้าน</span></h2></center>
 	<div class="col-sm"><br><br><br><br>
