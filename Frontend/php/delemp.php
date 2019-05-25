@@ -52,7 +52,7 @@ exit();
     <form method="POST" action="del.php">
   <div class="form-group">
     <label for="exampleFormControlInput1">รหัสพนักงานที่ต้องการนำออกจากระบบ</label>
-    <input type="text" class="form-control" name="emp_id" placeholder="xxxxxx" required>
+    <input type="text" class="form-control" name="emp_id" placeholder="xxxxxx">
   </div>
 
 

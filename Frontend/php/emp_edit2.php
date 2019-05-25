@@ -30,11 +30,11 @@ exit();
               <form method="POST" action="e_2.php">
                 <div class="form-group">
                     Employee Name<br>
-                    <input class="form-control" type="text" name="emp_name" required>
+                    <input class="form-control" type="text" name="emp_name">
                 </div>
                  <div class="form-group">
                     Password<br>
-                    <input class="form-control" type="text" name="user_pass" required>
+                    <input class="form-control" type="text" name="user_pass">
                 </div>
 
                 <div class="form-group">

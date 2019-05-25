@@ -25,13 +25,11 @@ exit();
               <form method="POST" action="viewProduct2.php">
                 <div class="form-group">
                     Product ID<br>
-                    <input class="form-control" type="text" name="p_id" required>
+                    <input class="form-control" type="text" name="p_id">
                 </div>
 
                 <center>
 
-                    <input type="submit" name="submit" value="submit">
-                    <button type="button" class="btn btn-light">Back</button>
 
                     <input class="btn btn-light" type="submit" name="submit" value="submit">
                     <button onclick="goBack()" type="button" class="btn btn-light">Back</button>
