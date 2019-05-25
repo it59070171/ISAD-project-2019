@@ -52,7 +52,7 @@ exit();
 
 	</div>
 
-	<center><button type="button" class="btn btn-light">Log Out</button></center>
+	<center><a class="btn btn-light" href="login.php" role="button">LOG OUT</a></center>
 
 </div>
 </div>
