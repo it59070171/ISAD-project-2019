@@ -65,7 +65,10 @@ exit();
           </select>
   
 
-       <center>  <input type="submit" name="submit" value="submit"></center>
+      <center>
+                    <input class="btn btn-light" type="submit" name="submit" value="submit">
+                    <button onclick="goBack()" type="button" class="btn btn-light">Back</button>
+                </center>
     </div>
 
 
@@ -75,6 +78,10 @@ exit();
   </div>
     </div>
 
-
+    <script>
+    function goBack() {
+    window.history.back();
+}
+</script>
 </body>
 </html>
