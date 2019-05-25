@@ -41,7 +41,7 @@ exit();
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-							<a class="btn btn-dark" href=".php" role="button">เพิ่มสินค้าใหม่</a>
+							<a class="btn btn-dark" href="addProduct.php" role="button">เพิ่มสินค้าใหม่</a>
 							</center>
 						</div>
 					</div>
