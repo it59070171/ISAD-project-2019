@@ -84,7 +84,7 @@ exit();
 
 	</div>
 
-	<center><a class="btn btn-light" href="login.php" role="button">LOG OUT</a></center>
+	<center><a class="btn btn-light" href="logout.php" role="button">LOG OUT</a></center>
 
 </div>
 </div>
