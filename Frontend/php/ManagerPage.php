@@ -23,7 +23,7 @@ exit();
 	<meta charset="UTF-8">
 	<title>Manager Page</title>
 </head>
-<body>
+<body style="background-color:#292F33;">
 	<br><br><br><br>
 	<center><h2><span class="badge badge-secondary">หน้าหลักผู้จัดการ</span></h2></center>
 	<div class="col-sm"><br><br><br><br>
