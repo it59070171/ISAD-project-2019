@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
     <title>แก้ไขข้อมูลพนักงาน</title>
 </head>
 <body>

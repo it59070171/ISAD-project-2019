@@ -1,22 +1,31 @@
-    	<?php
-			function conn(){
+<?php
+function conn(){
 		$conn = new mysqli("localhost", "root","", "stock");
 		return $conn;
 	}
-					    $strSQL = "SELECT * FROM employees WHERE Username = '".mysql_real_escape_string($_POST['username'])."' and Password = '".mysql_real_escape_string($_POST['Password'])."'";
-						$conn = conn();
-						$objQuery = mysql_query($strSQL);
-						$objResult = mysql_fetch_array($objQuery);
-						$result = $conn->query($sql);
-						$row = $result->fetch_assoc();
-						if(!$row){
-						      echo "Username and Password Incorrect!";
-						  }else{
-						  	if ($row['row']=='Manager') {
-						  		echo "1";
-						  	}elseif ($row['row']=='Frontend') {
-						  		echo "2";
-						  	}elseif ($row['row']=='Backend') {
-						  		echo "3";
-						  	}
-		?>
+
+
+$username = $_POST['username'];
+$password = $_POST['password'];
+$conn = conn();
+$sql = "SELECT role FROM employees WHERE user_id='$username' AND user_pass='$password'";
+$result = $conn->query($sql);
+$objResult = mysqli_fetch_array($result);
+	if ($result->num_rows > 0) {
+		if ($objResult['role'] == "Manager") {
+			header( "location: ManagerPage.php" );
+		}
+		else if ($objResult['role'] == "Frontend") {
+			header( "location: FrontedPage.php" );
+		}
+		else
+		{
+			header( "location: BackendPage.php" );
+		}
+				
+	} else {
+		echo "Username and Password Incorrect!";
+	}
+
+
+?>

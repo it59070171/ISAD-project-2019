@@ -34,10 +34,11 @@
       <center><h2><span class="badge badge-secondary">เข้าสู่ระบบ</span></h2></center>
               <form method="POST" action="viewProduct2.php">
                 <div class="form-group">
-                    Product ID<br>
-                    <input class="form-control" type="text" name="username">
+                    User ID<br>
+                    <input class="form-control" type="text" id="username" name="username">
                     <br>
-                    <input class="form-control" type="password" name="password">
+                    Password
+                    <input class="form-control" type="password" id="password" name="password">
                     <br>
                 </div>
 
