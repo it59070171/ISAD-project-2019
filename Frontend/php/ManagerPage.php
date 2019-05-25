@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>Manager Page</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-								<button type="button" class="btn btn-dark">เพิ่มพนักงาน</button>
+							<a class="btn btn-dark" href="addEmp.php" role="button">เพิ่มพนักงาน</a>
 							</center>
 						</div>
 					</div>
@@ -22,7 +23,7 @@
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-								<button type="button" class="btn btn-dark">แก้ไขพนักงาน</button>
+							<a class="btn btn-dark" href="emp_edit1.php" role="button">แก้ไขพนักงาน</a>
 							</center>
 						</div>
 					</div>
@@ -31,7 +32,7 @@
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-								<button type="button" class="btn btn-dark">ลบพนักงาน</button>
+							<a class="btn btn-dark" href="delemp.php" role="button">ลบพนักงาน</a>
 							</center>
 						</div>
 					</div>
@@ -45,7 +46,7 @@
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-								<button type="button" class="btn btn-dark">แก้ไขสินค้า</button>
+							<a class="btn btn-dark" href="viewProduct1.php" role="button">ดูข้อมูลสินค้า</a>
 							</center>
 						</div>
 					</div>
@@ -54,7 +55,7 @@
 					<div class="card-body">
 						<div class="col-sm">
 							<center><br>
-								<button type="button" class="btn btn-dark">ดู Dashboard</button>
+							<a class="btn btn-dark" href="choosedate.php" role="button">ดู Dashboard</a>
 							</center>
 						</div>
 					</div>

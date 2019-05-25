@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>ดูข้อมูลสินค้า</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
                 </div>
 
                 <center>
-                    <input type="submit" name="submit" value="submit">
+                    <input class="btn btn-light" type="submit" name="submit" value="submit">
                     <button type="button" class="btn btn-light">Back</button>
                 </center>
             </form> 
