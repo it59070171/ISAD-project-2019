@@ -3,12 +3,10 @@
 		$conn = new mysqli("localhost", "root","", "stock");
 		return $conn;
 	}
-					    $user_id = $_POST['username'];
-						$user_pass = $_POST['password'];
+					    $strSQL = "SELECT * FROM employees WHERE Username = '".mysql_real_escape_string($_POST['username'])."' and Password = '".mysql_real_escape_string($_POST['Password'])."'";
 						$conn = conn();
-						$sql = "SELECT * FROM employees
-						WHERE user_id = $user_id
-						AND user_pass = $user_pass";
+						$objQuery = mysql_query($strSQL);
+						$objResult = mysql_fetch_array($objQuery);
 						$result = $conn->query($sql);
 						$row = $result->fetch_assoc();
 						if(!$row){

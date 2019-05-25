@@ -37,7 +37,7 @@
                     Product ID<br>
                     <input class="form-control" type="text" name="username">
                     <br>
-                    <input class="form-control" type="text" name="password">
+                    <input class="form-control" type="password" name="password">
                     <br>
                 </div>
 
