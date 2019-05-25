@@ -17,7 +17,7 @@ exit();
 <head>
     <title>ดูข้อมูลสินค้า</title>
 </head>
-<body>
+<body style="background-color:#292F33;">
     <div class="col-sm"><br><br><br><br>
         <div class="card" style="width: 70%;">
           <div class="card-body">
