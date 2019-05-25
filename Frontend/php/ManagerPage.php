@@ -6,7 +6,7 @@
 </head>
 <body>
 	<br><br><br><br>
-	<center><h2><span class="badge badge-secondary">หน้าของผู้จัดการ</span></h2></center>
+	<center><h2><span class="badge badge-secondary">หน้าหลักผู้จัดการ</span></h2></center>
 	<div class="col-sm"><br><br><br><br>
 		<div class="container">
 			<div class="row">
