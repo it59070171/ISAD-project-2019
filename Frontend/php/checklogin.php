@@ -4,7 +4,7 @@ function conn(){
 		return $conn;
 	}
 
-
+session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 $conn = conn();
@@ -12,15 +12,17 @@ $sql = "SELECT role FROM employees WHERE user_id='$username' AND user_pass='$pas
 $result = $conn->query($sql);
 $objResult = mysqli_fetch_array($result);
 	if ($result->num_rows > 0) {
+		$_SESSION["UserID"] = $username;
+		$_SESSION["role"] = $objResult['role'];
 		if ($objResult['role'] == "Manager") {
 			header( "location: ManagerPage.php" );
 		}
 		else if ($objResult['role'] == "Frontend") {
-			header( "location: FrontedPage.php" );
+			header( "location: FrontPage.php" );
 		}
 		else
 		{
-			header( "location: BackendPage.php" );
+			header( "location: BackPage.php" );
 		}
 				
 	} else {

@@ -1,3 +1,21 @@
+<?php
+function conn(){
+    $conn = new mysqli("localhost", "root","", "stock");
+    return $conn;
+  }
+session_start();
+if($_SESSION["UserID"] == "")
+{
+echo "Please Login!";
+exit();
+}
+
+if($_SESSION["role"] != "Manager")
+{
+echo "This page for Manager only!";
+exit();
+} 
+?>
 
 <!DOCTYPE html>
 <html lang="en">
