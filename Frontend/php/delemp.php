@@ -1,21 +1,3 @@
-<?php
-function conn(){
-    $conn = new mysqli("localhost", "root","", "stock");
-    return $conn;
-  }
-session_start();
-if($_SESSION["UserID"] == "")
-{
-echo "Please Login!";
-exit();
-}
-
-if($_SESSION["role"] != "Manager")
-{
-echo "This page for Manager only!";
-exit();
-} 
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +25,7 @@ exit();
     </style>
 
 </head>
-<body style="background-color:#292F33;">
+<body>
 <br><br><br><br><br><br>
 <div class="col-sm">
     <div class="card" style="width: 30%;">
@@ -52,11 +34,11 @@ exit();
     <form method="POST" action="del.php">
   <div class="form-group">
     <label for="exampleFormControlInput1">รหัสพนักงานที่ต้องการนำออกจากระบบ</label>
-    <input type="text" class="form-control" name="emp_id" placeholder="xxxxxx" required>
+    <input type="text" class="form-control" name="emp_id" placeholder="xxxxxx">
   </div>
 
 
-        <center>
+                  <center>
                     <input class="btn btn-light" type="submit" name="submit" value="submit">
                     <button onclick="goBack()" type="button" class="btn btn-light">Back</button>
                 </center>
@@ -69,9 +51,9 @@ exit();
   </div>
     </div>
 
-<script>
-function goBack() {
-  window.history.back();
+    <script>
+    function goBack() {
+    window.history.back();
 }
 </script>
 </body>
