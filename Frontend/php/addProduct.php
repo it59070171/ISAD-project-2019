@@ -32,14 +32,14 @@
       <center><h2><span class="badge badge-secondary">เพิ่มสินค้า</span></h2></center>
 <form method="POST" action="addp.php">
  <label for="exampleFormControlInput1">รหัสบาร์โค้ดสินค้า</label>
- <input type="text" name="p_code" value="">
+ <input type="text" name="p_code" value="" required>
   <div class="form-group">
     <label for="exampleFormControlInput1">ชื่อผลิตภัณฑ์</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" name="p_name">
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="p_name" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">ราคา</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" name="p_price" placeholder="x.xx">
+    <input type="text" class="form-control" id="exampleFormControlInput1" name="p_price" placeholder="x.xx" required>
   </div>
    <div class="form-group">
     <label for="exampleFormControlInput1">โซนที่อยู่</label>
@@ -65,19 +65,19 @@
     </div>
     <div class="form-group">
     <label for="exampleFormControlInput1">วันหมดอายุ</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ปี-เดือน-วัน (ตัวอย่าง 2019-02-24 เป็นต้น)" name="expired_date">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ปี-เดือน-วัน (ตัวอย่าง 2019-02-24 เป็นต้น)" name="expired_date" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">จำนวนขั้นต่ำ</label>
-    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="เลขจำนวนเต็ม" name="p_min">
+    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="เลขจำนวนเต็ม" name="p_min" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">จำนวนสินค้า</label>
-    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="เลขจำนวนเต็ม" name="p_quantity">
+    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="เลขจำนวนเต็ม" name="p_quantity" required>
   </div>
   <div class="form-group">
     <label for="exampleFormControlInput1">รายละเอียดสินค้า</label>
-    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="" name="p_descript">
+    <input type="text"class="form-control" id="exampleFormControlInput1" placeholder="" name="p_descript" required>
   </div>
 
        <center> <input type="submit" name="submit" value="submit"></center>
