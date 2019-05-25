@@ -35,10 +35,10 @@
               <form method="POST" action="viewProduct2.php">
                 <div class="form-group">
                     User ID<br>
-                    <input class="form-control" type="text" id="username" name="username">
+                    <input class="form-control" type="text" id="username" name="username" required>
                     <br>
                     Password
-                    <input class="form-control" type="password" id="password" name="password">
+                    <input class="form-control" type="password" id="password" name="password" required>
                     <br>
                 </div>
 
