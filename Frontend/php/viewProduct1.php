@@ -11,7 +11,7 @@
               <form method="POST" action="viewProduct2.php">
                 <div class="form-group">
                     Product ID<br>
-                    <input class="form-control" type="text" name="p_id">
+                    <input class="form-control" type="text" name="p_id" required>
                 </div>
 
                 <center>
