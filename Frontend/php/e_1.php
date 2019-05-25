@@ -17,3 +17,13 @@ else{
 }
 
 ?>
+<!DOCTYPE html>
+                  <html>
+                  <head>
+                  	<title></title>
+                  </head>
+                  <body>
+                  <br>
+                  <button type="button" class="btn btn-light" onclick="window.location.href='ManagerPage.php';">Back</button>
+                  </body>
+                  </html>

@@ -25,7 +25,7 @@
                   	<title></title>
                   </head>
                   <body>
-                  Success!!!
+                  Sale Success
                   <br>
                   <button type="button" class="btn btn-light" onclick="window.location.href='scan1.php';">Back</button>
                   </body>
