@@ -5,7 +5,7 @@
   $sum_circulation = 0;
   ///
 function conn(){
-    $conn = new mysqli("localhost", "root","", "stock");
+    $conn = new mysqli("localhost", "root","", "stockingver999");
     return $conn;
   }
   $month = $_POST["month"];
@@ -13,15 +13,7 @@ function conn(){
   $conn = conn();
   $sql = "SELECT * FROM finance WHERE month = $month AND year = $year";
   $result = $conn->query($sql);
-  $count = mysqli_num_rows($result);
-  $row = $result->fetch_assoc();
-  for ($i=1; $i <= $count ; $i++) {
-    if($row["order_id"] == $i){
-        $sum_income += $row["income"];
-        $sum_outcome += $row["outcome"];
-        $sum_circulation += $row["circulation"];
-    }
-  }
+
   // switch ($row['week']) {
   //   case 1:
   //     $week1 = $row['week'];
@@ -58,30 +50,37 @@ function conn(){
         <center><h2><span class="badge badge-secondary">Dashboard</span></h2></center><br><br><br><br>
 
         <div class="container">
+        <?php  while ($row = $result->fetch_assoc()) {
+        $sum_income += $row["income"];
+        $sum_outcome += $row["outcome"];
+        $sum_circulation += $row["circulation"];?>
           <div class="row">
             <div class="card" style="width: 30%;">
               <div class="card-body">
                 <div class="col-sm">
-                  Income:<?=$sum_income?>++<?=$row["income"]?><br>
-                  Outcome:<?=$sum_outcome?>++<?=$row["outcome"]?><br>
-                  Circulation:<?=$sum_circulation?>++<?=$row["circulation"]?><br>
+                  Income:<?=$row["income"]?><br>
+                  Outcome:<?=$row["outcome"]?><br>
+                  Circulation:<?=$row["circulation"]?><br>
                 </div>
               </div>
             </div>
             <div class="card" style="width: 30%;">
               <div class="card-body">
                 <div class="col-sm">
+                  Week: <?=$row['week']?><br>
+
                   Month:<?=$month?><br>
 
                   Year:<?=$year?><br>
 
-                  OrdetrID: <?=$row["order_id"]?>
-                </div>
+                  OrdetrID: <?=$row["fin_id"]?>
+                </div>        
               </div>
             </div>
           </div>
         </div>
-
+        <br><br><br>
+<?php } ?>
         <center><button type="button" class="btn btn-light">Back</button></center>
 
       </div>
