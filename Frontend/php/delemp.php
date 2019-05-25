@@ -43,7 +43,7 @@ exit();
     </style>
 
 </head>
-<body>
+<body style="background-color:#292F33;">
 <br><br><br><br><br><br>
 <div class="col-sm">
     <div class="card" style="width: 30%;">
