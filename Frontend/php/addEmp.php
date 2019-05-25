@@ -30,22 +30,24 @@
     <div class="card" style="width: 30%;">
   <div class="card-body">
       <center><h2><span class="badge badge-secondary">เพิ่มพนักงาน</span></h2></center>
-    <form method="POST" action="adde.php">
-  <div class="form-group">
+  <form method="POST" action="adde.php">
     <label for="exampleFormControlInput1">Userid</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="xxxxxx" name="user_id">
-  </div>
-  <div class="form-group">
+    <input class="form-control" type="text" placeholder="xxxxxx" name="user_id">
+  
     <label for="exampleFormControlInput1">ชื่อ</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" name="emp_name">
-  </div>
-  <div class="form-group">
+    <input  class="form-control" type="text" name="emp_name">
+ 
+ 
     <label for="exampleFormControlInput1">ตำแหน่งงาน</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" name="role">
-  </div>
+    <select name="role">  
+            <option value="Manager">Manager</option>  
+            <option value="Fronted">Fronted</option>  
+            <option value="Backend">Backend</option>  
+          </select>
+  
 
-       <center> <button type="button" class="btn btn-primary">ยืนยัน</button></center>
-
+       <center>  <input type="submit" name="submit" value="submit"></center>
+    </div>
 
 
 </form>

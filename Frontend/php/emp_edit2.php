@@ -13,20 +13,24 @@
                     Employee Name<br>
                     <input class="form-control" type="text" name="emp_name">
                 </div>
+                 <div class="form-group">
+                    Password<br>
+                    <input class="form-control" type="text" name="user_pass">
+                </div>
 
                 <div class="form-group">
                     Employee Position<br>
-                    <input class="form-control" type="text" name="role">
+                   <select name="role">  
+            <option value="Manager">Manager</option>  
+            <option value="Fronted">Fronted</option>  
+            <option value="Backend">Backend</option>  
+          </select>
                 </div>
 
 
-                <div class="form-group">
-                    Employee Phone<br>
-                    <input class="form-control" type="text" name="phone">
-                </div>
+               
                 <center>
-                    <button type="button" class="btn btn-dark">Submit</button>
-                    <button type="button" class="btn btn-light">Back</button>
+                    <input type="submit" name="submit" value="submit">
                 </center>
             </form> 
         </div>

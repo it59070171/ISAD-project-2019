@@ -15,8 +15,7 @@
                 </div>
 
                 <center>
-                    <button type="button" class="btn btn-dark">Submit</button>
-                    <button type="button" class="btn btn-light">Back</button>
+                    <input type="submit" name="submit" value="submit">
                 </center>
             </form> 
         </div>

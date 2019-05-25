@@ -1,13 +1,16 @@
 <?php
-include 'connectDB.php';
 function conn(){
-		$conn = new mysqli("localhost", "root","", "stocking");
+		$conn = new mysqli("localhost", "root","", "stock");
 		return $conn;
 	}
-
-
-$checkEmpID =  $conn->query("SELECT LAST(emp_id) FROM employees");
+$user_id = $_POST['user_id'];
+$emp_name = $_POST['emp_name'];
+$role = $_POST['role'];
 $RanPass = rand(100000,999999);
-$sqlinsert = "INSERT INTO employees (emp_id,user_id,user_pass,emp_name,role) VALUES ('$checkEmpID', '$_POST["user_id"]', '$ranpass', '$_POST["emp_name"]', '$_post["role"]')";
-echo "password = '$RanPass'";
+$conn = conn();
+$sql = "INSERT INTO employees (user_id,user_pass,emp_name,role) VALUES ('$user_id', '$RanPass', '$emp_name', '$role')";
+$result = $conn->query($sql);
+echo "userid = $user_id";
+echo '<br/>';
+echo "password = $RanPass";
 ?>

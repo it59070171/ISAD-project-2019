@@ -34,11 +34,11 @@
     <form method="POST" action="del.php">
   <div class="form-group">
     <label for="exampleFormControlInput1">รหัสพนักงานที่ต้องการนำออกจากระบบ</label>
-    <input type="email" class="form-control" name="emp_id" placeholder="xxxxxx">
+    <input type="text" class="form-control" name="emp_id" placeholder="xxxxxx">
   </div>
 
 
-       <center> <button type="button" class="btn btn-primary">ยืนยัน</button></center>
+       <center>  <input type="submit" name="submit" value="submit"></center>
 
 
 
