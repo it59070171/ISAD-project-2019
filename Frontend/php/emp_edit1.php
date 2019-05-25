@@ -30,7 +30,7 @@ exit();
               <form method="POST" action="e_1.php">
                 <div class="form-group">
                     Employee ID<br>
-                    <input class="form-control" type="text" name="emp_id">
+                    <input class="form-control" type="text" name="emp_id" required>
                 </div>
 
                 <center>

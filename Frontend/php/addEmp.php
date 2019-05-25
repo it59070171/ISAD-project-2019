@@ -51,10 +51,10 @@ exit();
       <center><h2><span class="badge badge-secondary">เพิ่มพนักงาน</span></h2></center>
   <form method="POST" action="adde.php">
     <label for="exampleFormControlInput1">Userid</label>
-    <input class="form-control" type="text" placeholder="xxxxxx" name="user_id">
+    <input class="form-control" type="text" placeholder="xxxxxx" name="user_id" required>
   
     <label for="exampleFormControlInput1">ชื่อ</label>
-    <input  class="form-control" type="text" name="emp_name">
+    <input  class="form-control" type="text" name="emp_name" required>
  
  
     <label for="exampleFormControlInput1">ตำแหน่งงาน</label>

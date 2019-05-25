@@ -19,6 +19,7 @@ exit();
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>สแกนเพื่อขายสินค้า</title>
 </head>
 <body>
@@ -44,7 +45,7 @@ exit();
         <form method="POST" action="scan3.php">
           <div class="form-group">
             จำนวนที่ขาย<br>
-            <input class="form-control" type="integrity" name="quantity">
+            <input class="form-control" type="integrity" name="quantity" required>
           </div>
           <center>
             <input type="hidden" name="p_price" value="<?=$row['p_price']?>"> 
