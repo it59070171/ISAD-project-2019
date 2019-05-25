@@ -21,7 +21,7 @@ exit();
 <head>
   <title>สแกนเพื่อขายสินค้า</title>
 </head>
-<body>
+<body style="background-color:#292F33;">
   <div class="col-sm"><br><br><br><br>
     <div class="card" style="width: 50%;">
       <div class="card-body">
